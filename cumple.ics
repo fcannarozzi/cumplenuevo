@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Organization//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:uid1@example.com
+DTSTAMP:20240704T000000Z
+ORGANIZER;CN=Fabio Cannarozzi:mailto:fabio@example.com
+DTSTART:20240712T230000Z
+DTEND:20240713T040000Z
+SUMMARY:Cumpleañito
+DESCRIPTION:Sos muy afortunad@ de ser invitad@ a este evento de alto prestigio y calibre en Rabieta Palermo.
+LOCATION:Avenida Del Libertador 3949 B1637 Buenos Aires CABA Argentina
+END:VEVENT
+END:VCALENDAR
