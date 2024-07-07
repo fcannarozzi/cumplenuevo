@@ -41,56 +41,6 @@
         .button:hover {
             background-color: #0056b3; /* Color de fondo al pasar el ratón */
         }
-        .form-container {
-            max-width: 250px; /* Ancho máximo del contenedor reducido */
-            padding: 10px; /* Padding reducido para hacer más pequeño */
-            background-color: rgba(0, 0, 0, 0.05); /* Fondo semitransparente */
-            margin-top: 10px; /* Espacio superior para separar del contenido anterior */
-            border-radius: 15px; /* Esquinas redondeadas */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-        }
-        .form-container h2 {
-            margin: 0; /* Eliminar margen superior e inferior */
-            font-size: 18px; /* Reducir tamaño de fuente */
-        }
-        .form-group {
-            position: relative;
-            margin-bottom: 10px; /* Reducir margen inferior */
-        }
-        .form-container input[type=text] {
-            width: 100%; /* Ancho del 100% */
-            padding: 8px; /* Ajuste del padding */
-            box-sizing: border-box;
-            border: 2px solid rgba(0, 0, 0, 0.2); /* Borde semitransparente */
-            border-radius: 15px; /* Esquinas redondeadas */
-            background-color: #ffffff; /* Fondo blanco */
-            font-size: 16px; /* Tamaño de letra reducido */
-            color: rgba(0, 0, 0, 0.7); /* Color de texto semitransparente */
-            outline: none; /* Elimina el borde de enfoque */
-            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el borde y la sombra */
-        }
-        .form-container input[type=text]:focus {
-            border-color: #007AFF; /* Color de borde al enfocarse */
-            box-shadow: 0 0 10px rgba(0, 122, 255, 0.5); /* Sombra azul al enfocarse */
-        }
-        .form-container input[type=text]::placeholder {
-            color: rgba(0, 0, 0, 0.3); /* Color de texto semitransparente para el placeholder */
-        }
-        .form-container input[type=submit] {
-            background-color: #007AFF;
-            color: #fff;
-            border: none;
-            padding: 8px 16px; /* Ajuste del padding */
-            text-decoration: none;
-            font-size: 14px; /* Reducir tamaño de fuente */
-            cursor: pointer;
-            border-radius: 5px;
-            display: block;
-            margin: 10px auto 0; /* Ajuste del margen */
-        }
-        .form-container input[type=submit]:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
@@ -99,17 +49,8 @@
         <div>
             <a href="https://maps.apple.com/?q=Rabieta%20Palermo" class="button">Apple Maps</a>
             <a href="https://maps.google.com/?q=Rabieta%20Palermo" class="button">Google Maps</a>
-            <a href="https://waze.com/ul?q=Rabieta%20Palermo" class="button">Waze</a>
+            <a href="https://waze.com/ul?q=Rabieta%20Palermo" class="button">Waze Maps</a>
             <a href="cumple.ics" class="button" download="evento_cumpleaños.ics">Añadir Evento</a>
-        </div>
-        <div class="form-container">
-            <h2>Confirmar Asistencia</h2>
-            <form action="send_email.php" method="post" onsubmit="showThankYouMessage(event)">
-                <div class="form-group">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
         </div>
     </div>
 </body>
